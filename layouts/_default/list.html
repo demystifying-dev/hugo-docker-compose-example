@@ -1,3 +1,7 @@
 {{ define "content" }}
   <h1>{{ .Title }}</h1>
+  Check out our blog:
+    {{ range where .Site.Pages "Type" "blog_posts" }} 
+      <a href="{{ .Permalink }}" class="navbar-item">{{ .Title }}</a>
+    {{ end }}
 {{ end }}
