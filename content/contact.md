@@ -1,4 +1,4 @@
 ---
 title: Contact
-url: about
+url: contact
 ---
