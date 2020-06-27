@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  hugodemo:
+    # we need extended, and nodejs for sass!
+    image: klakegg/hugo:ext-nodejs
+    container_name: hugodemo
+    command: server
+    volumes: 
+      - .:/src
+    ports:
+      - "1313:1313"
+
